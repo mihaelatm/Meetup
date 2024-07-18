@@ -1,5 +1,7 @@
 @import url(css/navbar.css);
 @import url(css/content.css);
+@import url(css/event.css);
+@import url(css/cards.css);
 
 * {
   margin: 0;
@@ -14,6 +16,7 @@ body {
 
 .container {
   display: flex;
+  flex-direction: column;
   max-width: 1196px;
   margin: 0 auto;
 }

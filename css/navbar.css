@@ -166,7 +166,7 @@
     width: 85vw;
   }
 }
-@media (min-width: 392px) and (max-width: 576px) {
+@media (max-width: 576px) {
   .logoImage {
     width: 94.34px;
     height: 34px;
