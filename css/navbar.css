@@ -1,0 +1,209 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.leftSide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logoImage {
+  width: 94.34px;
+  height: 34px;
+  margin: 15px 40px 15px 24px;
+  cursor: pointer;
+}
+
+.logoImage:hover {
+  transform: scale(1.2);
+}
+
+.searchbar {
+  display: flex;
+  position: relative;
+}
+
+.searchbar > img {
+  width: 22px;
+  height: 22px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.searchbar > input {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18.75px;
+  border: 1px solid #d9d9d9;
+  height: 42px;
+}
+
+.search-input {
+  width: 300px;
+  padding-left: 37px;
+  border: 1px solid #d9d9d9;
+  border-radius: 8px 0 0 8px;
+}
+
+.location-input {
+  width: 254px;
+  padding-left: 17px;
+  border: 1px solid #d9d9d9;
+  border-left: none;
+}
+.location-input::placeholder {
+  color: #000000;
+}
+
+.search-button {
+  width: 42px;
+  height: 42px;
+  background: #f65858;
+  border: 1px solid #d9d9d9;
+  border-radius: 0 8px 8px 0;
+  border: none;
+  cursor: pointer;
+}
+.search-button > img {
+  width: 20px;
+  height: 20px;
+}
+
+.rightSide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 22px;
+  margin-right: 49.87px;
+}
+
+.button {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  cursor: pointer;
+}
+
+.bttn {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  background: transparent;
+  border: none;
+}
+
+.bttn > img {
+  width: 20px;
+  height: 20px;
+}
+
+.rightSide > a {
+  text-decoration: none;
+  color: #212121;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+.btn {
+  width: 83.13px;
+  height: 36px;
+  background-color: #00798a;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+}
+@media (max-width: 1040px) {
+  .search-input {
+    width: 220px;
+  }
+
+  .location-input {
+    width: 200px;
+  }
+}
+
+@media (max-width: 992px) {
+  .leftSide {
+    display: flex;
+    position: relative;
+  }
+
+  .logoImage {
+    width: 94.34px;
+    height: 34px;
+    margin: 15px 40px 15px 24px;
+    cursor: pointer;
+  }
+
+  .logoImage:hover {
+    transform: scale(1.2);
+  }
+
+  .searchbar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    margin-left: 24px;
+  }
+
+  .search-input {
+    width: 89vw;
+  }
+  .location-input {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .search-input {
+    width: 85vw;
+  }
+}
+@media (min-width: 392px) and (max-width: 576px) {
+  .logoImage {
+    width: 94.34px;
+    height: 34px;
+    margin: 4px 60.66px 4px 24px;
+  }
+  .search-input {
+    width: 75vw;
+  }
+
+  .location-input {
+    display: none;
+  }
+
+  .rightSide {
+    margin-right: 7px;
+    gap: 18px;
+  }
+  .rightSide > button {
+    font-size: 12px;
+    line-height: 17.09px;
+  }
+
+  .bttn {
+    gap: 2.91px;
+  }
+
+  .bttn > img {
+    width: 17.09px;
+    height: 17.09px;
+  }
+
+  .rightSide > a {
+    font-size: 12px;
+    line-height: 17.09px;
+  }
+
+  .btn {
+    width: 71.02px;
+    height: 30.76px;
+    border-radius: 6.83px;
+  }
+}
