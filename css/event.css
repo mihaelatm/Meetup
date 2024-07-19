@@ -1,8 +1,13 @@
 .event {
   display: flex;
   align-items: center;
-  margin-top: 28px;
   gap: 7.81px;
+}
+
+.title {
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 36px;
 }
 
 .events {
@@ -42,31 +47,15 @@
   margin-top: 40px;
 }
 
-@media (max-width: 1200px) {
-  .event {
-    padding: 0 10rem;
-  }
-}
-
-@media (max-width: 1040px) {
-  .event {
-    padding: 0 5rem;
-  }
-}
-
-@media (max-width: 992px) {
-}
-
 @media (max-width: 768px) {
-  .link {
-    display: none;
-  }
-}
-@media (max-width: 576px) {
   .event {
-    margin-top: 24.4px;
+    margin-top: 0px;
     gap: 4.81px;
-    padding: 0 24px;
+  }
+
+  .title {
+    font-size: 20px;
+    line-height: 24.67px;
   }
 
   .events {
@@ -89,5 +78,8 @@
 
   .link {
     display: none;
+  }
+
+  .online-events {
   }
 }
