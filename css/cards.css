@@ -171,3 +171,50 @@
     line-height: 20px;
   }
 }
+@media (max-width: 392px) {
+  .cardsSection {
+    gap: 0;
+  }
+
+  .event-description {
+    height: 100px;
+  }
+
+  .event-description > img {
+    width: 97.51px;
+    height: 54.99px;
+  }
+  .card > h3 {
+    font-size: 9.81px;
+    font-weight: 500;
+    line-height: 14.71px;
+  }
+
+  .card > p {
+    font-size: 8.58px;
+    font-weight: 400;
+    line-height: 12.26px;
+    margin-top: 0px;
+  }
+
+  .date {
+    display: flex;
+    margin-top: 5px;
+    gap: 6px;
+  }
+
+  .date > img {
+    width: 14px;
+    height: 14px;
+  }
+
+  .date > p {
+    font-size: 8.44px;
+    font-weight: 500;
+    line-height: 12.05px;
+  }
+
+  .event-info {
+    display: none;
+  }
+}

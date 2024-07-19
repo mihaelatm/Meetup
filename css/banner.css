@@ -56,14 +56,11 @@
   }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 567px) {
   .bannerMeetup {
     margin-top: 54.58px;
     display: flex;
     flex-direction: column;
-    gap: 0px;
-    background-color: rgba(151, 202, 209, 0.08);
-    border-radius: 8px;
     position: relative;
   }
 
@@ -71,14 +68,11 @@
     padding: 16px 0 32px 15px;
     display: flex;
     flex-direction: column;
-    gap: 0px;
   }
 
   .bannerContent > p {
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 24px;
-    margin-top: 109px;
+    font-size: 12px;
+    margin-top: 80px;
   }
 
   .bannerContent > button {
@@ -86,7 +80,6 @@
     font-weight: 500;
     line-height: 24px;
     position: relative;
-    top: 22px;
     left: 50%;
     transform: translateX(-50%);
   }
@@ -98,6 +91,16 @@
   .bannerImage > img {
     width: 238px;
     height: 136.8px;
-    margin-right: 0px;
+  }
+}
+@media (max-width: 392px) {
+  .bannerContent > p {
+    font-size: 12px;
+    margin-top: 109px;
+  }
+
+  .bannerImage {
+    position: absolute;
+    top: 30px;
   }
 }
