@@ -65,6 +65,13 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
   }
+
+  .popular_city > p {
+    font-size: 14.94px;
+    line-height: 20.92px;
+    margin-top: 17.93px;
+  }
+
   .popular_city > img {
     width: 153.15px;
     height: 153.15px;
@@ -91,12 +98,6 @@
   .popular_city > img {
     width: 153.15px;
     height: 153.15px;
-  }
-
-  .popular_city > p {
-    font-size: 14.94px;
-    line-height: 20.92px;
-    margin-top: 17.93px;
   }
 
   .hidden {

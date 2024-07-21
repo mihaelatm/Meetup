@@ -71,16 +71,16 @@
 }
 
 @media (max-width: 576px) {
+  .categories-title {
+    margin-top: 15px;
+  }
+
   .events-categories {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
   }
 }
 @media (max-width: 392px) {
-  .categories-title {
-    margin-top: 23px;
-  }
-
   .events-categories {
     display: grid;
     grid-template-columns: repeat(2, 1fr);

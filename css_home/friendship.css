@@ -1,0 +1,97 @@
+.friendshipTitle {
+  display: flex;
+  flex-direction: column;
+}
+
+.friendshipTitle > p {
+  margin-top: 16px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  margin-top: 16px;
+  color: #707070;
+}
+
+.friendshipSection {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 28px;
+  gap: 32px;
+}
+
+.cards_friendship > img {
+  width: 376px;
+  height: 191.5px;
+  margin-bottom: 24px;
+}
+
+.cards_friendship > h4 {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 28px;
+  margin-bottom: 12px;
+}
+
+.cards_friendship > p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #707070;
+  margin-bottom: 16px;
+}
+
+.cards_friendship > span {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #00798a;
+}
+
+@media (max-width: 1200px) {
+  .friendshipSection {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .friendshipSection {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media (max-width: 392px) {
+  .friendshipTitle {
+    margin-top: 17px;
+  }
+
+  .friendshipTitle > p {
+    display: none;
+  }
+
+  .friendshipSection {
+    margin-top: 27px;
+  }
+
+  .cards_friendship > img {
+    width: 360.32px;
+    height: 183.51px;
+    margin-bottom: 23px;
+  }
+
+  .cards_friendship > h4 {
+    font-size: 16px;
+    line-height: 26.73px;
+    margin-bottom: 11.46px;
+  }
+
+  .cards_friendship > p {
+    font-size: 12px;
+    line-height: 22.91px;
+    margin-bottom: 15.28px;
+  }
+
+  .cards_friendship > span {
+    font-size: 12px;
+    line-height: 23px;
+  }
+}

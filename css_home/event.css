@@ -79,7 +79,15 @@
   .link {
     display: none;
   }
+}
 
-  .online-events {
+@media (max-width: 576px) {
+  .title {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24.67px;
+  }
+  .event {
+    margin-top: 24.4px;
   }
 }

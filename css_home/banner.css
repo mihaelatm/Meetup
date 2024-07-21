@@ -72,7 +72,7 @@
 
   .bannerContent > p {
     font-size: 12px;
-    margin-top: 80px;
+    margin-top: 109px;
   }
 
   .bannerContent > button {
@@ -86,6 +86,7 @@
 
   .bannerImage {
     position: absolute;
+    top: 30px;
   }
 
   .bannerImage > img {

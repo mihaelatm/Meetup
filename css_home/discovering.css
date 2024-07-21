@@ -1,0 +1,103 @@
+.discoverMeetup {
+  display: flex;
+  gap: 32px;
+  margin-top: 24px;
+}
+
+.cards_discover {
+  display: flex;
+  width: 580px;
+  padding: 32px 112px 32px 24px;
+  border: 1px solid red;
+  background-color: rgba(151, 202, 209, 0.08);
+}
+
+.discoverIconEvents > img {
+  width: 41px;
+  height: 41px;
+}
+.content-discover {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-left: 24px;
+}
+.content-discover > h4 {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+.content-discover > p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+.content-discover > span {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  color: #00798a;
+}
+
+@media (max-width: 768px) {
+  .discoverMeetup {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+}
+
+@media (max-width: 576px) {
+  .cards_discover {
+    display: flex;
+    padding: 19.91px 69.69px 14.93px 14.93px;
+    width: 530px;
+  }
+
+  .discoverMeetup {
+    display: flex;
+    gap: 12px;
+    margin-top: 14.93px;
+  }
+
+  .discoverIconEvents > img {
+    width: 25.51px;
+    height: 25.51px;
+  }
+}
+
+@media (max-width: 392px) {
+  .discoverMeetup {
+    display: flex;
+    gap: 12px;
+    margin-top: 14.93px;
+  }
+  .cards_discover {
+    width: 360.89px;
+  }
+  .discoverIconEvents > img {
+    width: 25.51px;
+    height: 25.51px;
+  }
+  .content-discover {
+    gap: 9.96px;
+    margin-left: 14.93px;
+  }
+
+  .content-discover > h4 {
+    font-size: 12px;
+    line-height: 14.93px;
+  }
+
+  .content-discover > p {
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 14.93px;
+  }
+  .content-discover > span {
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 14.93px;
+  }
+}

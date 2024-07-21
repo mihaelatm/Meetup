@@ -1,10 +1,13 @@
-@import url(css/navbar.css);
-@import url(css/content.css);
-@import url(css/event.css);
-@import url(css/cards.css);
-@import url(css/banner.css);
-@import url(css/categories.css);
-@import url(css/cities.css);
+@import url(css_home/navbar.css);
+@import url(css_home/content.css);
+@import url(css_home/event.css);
+@import url(css_home/cards.css);
+@import url(css_home/banner.css);
+@import url(css_home/categories.css);
+@import url(css_home/cities.css);
+@import url(css_home/discovering.css);
+@import url(css_home/friendship.css);
+@import url(css_home/footer.css);
 
 * {
   margin: 0;
@@ -23,10 +26,19 @@ body {
   max-width: 1196px;
   margin: 0 auto;
 }
+.footer {
+  background-color: #212121;
+  margin-top: 64px;
+  color: #f6f7f8;
+}
 
 @media (max-width: 1200px) {
   .main {
-    padding: 0 10rem;
+    padding: 0 5rem;
+  }
+
+  .footer {
+    padding: 0 7rem;
   }
 }
 
@@ -40,10 +52,18 @@ body {
   .main {
     padding: 0 3rem;
   }
+
+  .footer {
+    padding: 0 5rem;
+  }
 }
 
 @media (max-width: 576px) {
   .main {
     padding: 0 2rem;
+  }
+
+  .footer {
+    padding: 0 3rem;
   }
 }
