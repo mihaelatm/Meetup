@@ -18,7 +18,7 @@
   margin-bottom: 24px;
 }
 
-.leftContent > button {
+.myButton {
   width: 125.28px;
   height: 40px;
   background-color: #00798a;
@@ -29,6 +29,7 @@
   font-weight: 400;
   line-height: 24px;
   margin-bottom: 98.5px;
+  cursor: pointer;
 }
 
 .rightContent > img {
