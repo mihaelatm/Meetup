@@ -8,8 +8,8 @@
   display: flex;
   width: 580px;
   padding: 32px 112px 32px 24px;
-  border: 1px solid red;
   background-color: rgba(151, 202, 209, 0.08);
+  border-radius: 8px;
 }
 
 .discoverIconEvents > img {

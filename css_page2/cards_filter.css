@@ -1,0 +1,145 @@
+.event_card {
+  display: flex;
+  margin-top: 34px;
+  gap: 12px;
+  border-top: 1px solid #d9d9d9;
+  padding-top: 16px;
+  max-width: 604px;
+}
+
+.image_card {
+  position: relative;
+}
+
+.image_card > img {
+  width: 159.11px;
+  height: 89.72px;
+}
+
+.info_card {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.date {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  color: #7c6f50;
+}
+.info_card > h3 {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+.description {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  color: #707070;
+}
+
+span {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #707070;
+  margin-top: 48px;
+}
+
+.attendees {
+  display: flex;
+  align-items: center;
+  gap: 15.79px;
+}
+
+.spots {
+  color: #e32359;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.online_event {
+  display: flex;
+  align-items: center;
+  padding-left: 4px;
+  gap: 4px;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+  color: #707070;
+  width: 105.22px;
+  height: 20px;
+  background-color: #ffffff;
+  border-radius: 4px;
+  position: absolute;
+  top: 8px;
+  left: 8px;
+}
+
+@media (max-width: 1024px) {
+  .event_card {
+    max-width: 550px;
+  }
+}
+@media (max-width: 576px) {
+  .event_card {
+    max-width: 640px;
+  }
+}
+
+@media (max-width: 392px) {
+  .event_card {
+    margin-top: 27.81px;
+    gap: 7.35px;
+    max-width: 370.17px;
+  }
+
+  .image_card > img {
+    width: 97.51px;
+    height: 64.35px;
+  }
+
+  .info_card {
+    gap: 1.97px;
+  }
+
+  .date {
+    font-size: 8.58px;
+    line-height: 12.26px;
+  }
+  .info_card > h3 {
+    font-size: 9.81px;
+    line-height: 14.71px;
+  }
+
+  .description {
+    font-size: 8.56px;
+    line-height: 12.26px;
+  }
+
+  span {
+    display: none;
+  }
+
+  .online_event {
+    display: flex;
+    align-items: center;
+    padding-left: 4px;
+    gap: 2.43px;
+    font-size: 7.3px;
+    line-height: 9.73px;
+    width: 64px;
+    height: 12.26px;
+    position: relative;
+    left: 100px;
+    top: -7px;
+  }
+  .online_event > img {
+    width: 9.73px;
+    height: 9.73px;
+  }
+}

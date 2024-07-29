@@ -46,49 +46,67 @@
       </div>
     </nav>
 
-    <main class="main">
-      <section class="content_events">
+    <main class="content_main">
+      <section class="content_events" id="eventsContainer">
         <div class="leftContent_events">
           <h1>Events near New York, NY</h1>
           <button>Events</button>
+        </div>
 
-          <div class="filtern">
-            <div class="filter">
-              <button class="button_filter">
-                Any type<img
-                  src="assets/icons/icon_filtern.png"
-                  alt="icon_filtern"
-                />
-              </button>
-            </div>
+        <div class="filtern">
+          <div class="filter">
+            <select class="filter_select" id="filterType">
+              <option value="any">Any type</option>
+              <option value="offline">Offline</option>
+              <option value="online">Online</option>
+            </select>
+          </div>
 
-            <div class="filter">
-              <button class="button_filter">
-                Any distance<img
-                  src="assets/icons/icon_filtern.png"
-                  alt="icon_filtern"
-                />
-              </button>
-            </div>
+          <div class="filter">
+            <select class="filter_select" id="filterDistance">
+              <option value="any">Any distance</option>
+              <option value="5">5 km</option>
+              <option value="10">10 km</option>
+              <option value="15">15 km</option>
+              <option value="25">25 km</option>
+              <option value="50">50 km</option>
+              <option value="75">75 km</option>
+              <option value="100">100 km</option>
+            </select>
+          </div>
 
-            <div class="filter">
-              <button class="button_filter">
-                Any category<img
-                  src="assets/icons/icon_filtern.png"
-                  alt="icon_filtern"
-                />
-              </button>
-            </div>
+          <div class="filter">
+            <select class="filter_select" id="filterCategory">
+              <option value="any">Any category</option>
+              <option value="Social Activities">Social Activities</option>
+              <option value="Hobbies and Passions">Hobbies and Passions</option>
+              <option value="Health and Wellbeing">Health and Wellbeing</option>
+              <option value="Business">Business</option>
+              <option value="Technology">Technology</option>
+            </select>
           </div>
         </div>
+
+        <div id="eventsList"></div>
+      </section>
+
+      <section class="rightContent">
         <div class="rightContent_events">
           <p>Find events near</p>
           <h2>New York, NY</h2>
-          <img src="assets/images/map-thumbnail.png.png" alt="map-thumbnail" />
-          <button class="centered_button">
-            Browse in map
-            <img src="assets/icons/expandMapIcon.svg.png" alt="" />
-          </button>
+          <div class="image-container">
+            <img
+              src="assets/images/map-thumbnail.png.png"
+              alt="map-thumbnail"
+            />
+            <button class="centered_button">
+              Browse in map
+              <img
+                src="assets/icons/expandMapIcon.svg.png"
+                alt="expandMapIcon"
+              />
+            </button>
+          </div>
         </div>
       </section>
     </main>
@@ -171,6 +189,7 @@
       </section>
     </footer>
 
-    <script src="scripts/script_page2.js"></script>
+    <script src="scripts/events_NY.js"></script>
+    <script src="scripts/eventsStore.js"></script>
   </body>
 </html>

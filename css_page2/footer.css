@@ -1,0 +1,150 @@
+.container_footer {
+  max-width: 1120px;
+  margin: 0 auto;
+}
+.footer_group {
+  display: flex;
+  padding: 24px 0px 40px 0px;
+  gap: 15.8px;
+  align-items: center;
+  border-bottom: 1px solid #ffffff;
+}
+.footer_group > p {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+.footer_group > button {
+  width: 119px;
+  height: 44px;
+  border: 2px solid #ffffff;
+  background-color: #212121;
+  color: #ffffff;
+  border-radius: 6px;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+.information_footer {
+  margin: 24px 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.information {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.information > h4 {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.information > p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #c5c4c4;
+}
+
+.follow_content {
+  display: flex;
+  flex-direction: column;
+}
+
+.follow_content > h4 {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  margin-bottom: 12px;
+}
+
+.social_media {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.media_social_icons {
+  display: flex;
+  gap: 32px;
+}
+
+.media_social_icons > img {
+  width: 30px;
+  height: 30px;
+}
+
+.apps_download {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.terms_and_politics {
+  margin-top: 32px;
+  display: flex;
+  gap: 24px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #ffffff;
+}
+
+@media (max-width: 992px) {
+  .media_social_icons {
+    display: flex;
+    gap: 10px;
+  }
+
+  .apps_download {
+    gap: 10px;
+  }
+
+  .terms_and_politics > p:nth-child(4) {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .footer_group {
+    display: flex;
+    padding: 10px 0px 40px 0px;
+    gap: 15.8px;
+    align-items: center;
+    border-bottom: 1px solid #ffffff;
+  }
+  .apps_download {
+    display: none;
+  }
+
+  .terms_and_politics > p:nth-child(3) {
+    display: none;
+  }
+}
+
+@media (max-width: 392px) {
+  .footer_group {
+    display: flex;
+    padding: 32px 0px 36px 0px;
+    gap: 15.8px;
+  }
+
+  .footer_group {
+    gap: 0px;
+  }
+
+  .terms_and_politics > p:nth-child(2) {
+    display: none;
+  }
+  .terms_and_politics > p:nth-child(5) {
+    display: none;
+  }
+  .terms_and_politics > p:last-child {
+    display: none;
+  }
+}
