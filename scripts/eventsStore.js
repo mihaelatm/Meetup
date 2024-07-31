@@ -1,4 +1,4 @@
-const eventsStore = [
+export const eventsStore = [
   {
     title: "INFJ Personality Type - Coffee Shop Meet & Greet",
     description: "Being an INFJ",
@@ -65,76 +65,3 @@ const eventsStore = [
     distance: 15,
   },
 ];
-
-document.addEventListener("DOMContentLoaded", () => {
-  const filterType = document.getElementById("filterType");
-  const filterDistance = document.getElementById("filterDistance");
-  const filterCategory = document.getElementById("filterCategory");
-  const eventsList = document.getElementById("eventsList");
-
-  function renderEvents(events) {
-    eventsList.innerHTML = "";
-    if (events.length === 0) {
-      eventsList.innerHTML = "<p>No events found</p>";
-      return;
-    }
-
-    events.forEach((event) => {
-      const eventCard = `
-        <div class="event_card">
-          <div class="image_card">
-            <img src="${event.image}" alt="event" />
-          </div>
-          <div class="info_card">
-            <p class="date">${event.date.toDateString()} ${event.date.toLocaleTimeString()}</p>
-            <h3>${event.title}</h3>
-            <p class="description">${event.category} (${event.distance} km)</p>
-            ${
-              event.attendees ? `<span>${event.attendees} attendees</span>` : ""
-            }
-          </div>
-        </div>
-      `;
-      eventsList.innerHTML += eventCard;
-    });
-  }
-
-  function filterEvents() {
-    const type = filterType.value;
-    const distance =
-      filterDistance.value === "any"
-        ? Infinity
-        : parseInt(filterDistance.value, 10);
-    const category = filterCategory.value;
-
-    let filteredEvents = eventsStore;
-
-    if (type !== "any") {
-      filteredEvents = filteredEvents.filter((event) => event.type === type);
-    }
-
-    if (distance !== Infinity) {
-      filteredEvents = filteredEvents.filter(
-        (event) => event.distance <= distance
-      );
-    }
-
-    if (category !== "any") {
-      filteredEvents = filteredEvents.filter(
-        (event) => event.category === category
-      );
-    }
-
-    // Log pentru debugging
-    console.log("Filtered Events:", filteredEvents);
-
-    renderEvents(filteredEvents);
-  }
-
-  filterType.addEventListener("change", filterEvents);
-  filterDistance.addEventListener("change", filterEvents);
-  filterCategory.addEventListener("change", filterEvents);
-
-  // Render all events on initial load
-  renderEvents(eventsStore);
-});
