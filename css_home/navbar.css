@@ -209,14 +209,10 @@
     border-radius: 6.83px;
   }
 }
-
 @media (max-width: 392px) {
   .logoImage {
     width: 94.34px;
     height: 34px;
-    margin: 4px 60.66px 4px 24px;
-  }
-  .leftSide {
-    margin-top: 15px;
+    margin: 4px 0px 4px 12px;
   }
 }
