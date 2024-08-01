@@ -182,7 +182,7 @@
 
   .rightSide {
     margin-right: 7px;
-    gap: 18px;
+    gap: 13px;
   }
   .rightSide > button {
     font-size: 12px;
@@ -207,5 +207,16 @@
     width: 71.02px;
     height: 30.76px;
     border-radius: 6.83px;
+  }
+}
+
+@media (max-width: 392px) {
+  .logoImage {
+    width: 94.34px;
+    height: 34px;
+    margin: 4px 60.66px 4px 24px;
+  }
+  .leftSide {
+    margin-top: 15px;
   }
 }
