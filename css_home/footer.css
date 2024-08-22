@@ -126,6 +126,11 @@
     display: none;
   }
 }
+@media (max-width: 567px) {
+  .terms_and_politics > p:nth-child(2) {
+    display: none;
+  }
+}
 
 @media (max-width: 392px) {
   .footer_group {

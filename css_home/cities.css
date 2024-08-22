@@ -1,9 +1,6 @@
 .cities_information {
   margin-top: 64px;
 }
-.cities_information {
-  margin-top: 64px;
-}
 
 .cities_information > p {
   margin-top: 16px;
@@ -59,11 +56,10 @@
     grid-template-columns: repeat(3, 1fr);
   }
 }
-@media (max-width: 576px) {
+@media (max-width: 390px) {
   .cities {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .popular_city > p {
@@ -78,7 +74,7 @@
   }
 }
 
-@media (max-width: 392px) {
+@media (max-width: 394px) {
   .cities_information {
     margin-top: 48px;
   }
